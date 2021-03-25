@@ -39,7 +39,7 @@ namespace UITLAP12
             if (a.Length == 0)
             {
                 Process.Start("firefox.exe");
-                WriteToFile("start " + DateTime.Now);
+                WriteToFile("firefox stop, start " + DateTime.Now);
             }
             else
             {
@@ -47,7 +47,7 @@ namespace UITLAP12
                 {
                     process.Kill();
                 }
-                WriteToFile("stop " + DateTime.Now);
+                WriteToFile("firefox running, stop " + DateTime.Now);
             }
             WriteToFile("Service is recall at " + DateTime.Now);
         }
